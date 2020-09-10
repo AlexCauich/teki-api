@@ -1,0 +1,105 @@
+html {
+    min-height: 100%;
+    position: relative;
+
+  }
+body {
+    margin: 0;
+    margin-bottom: 40px;
+}
+footer {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+    margin-top: 20px !important;
+}
+
+.logo img {
+    display:block;
+    margin:auto;
+    margin-top: 30px;
+    width: 40%;
+}
+
+
+.queries {
+    margin-top: 30px;
+}
+
+
+/*Cards*/
+    .card {
+        height: 300px !important;
+    }
+/* FIN Cards*/
+
+/* Select */
+.caja {
+    border:1px solid #d9d9d9;
+    border-radius: 10px;
+    height:30px;
+    overflow: hidden;
+    width: 230px;
+    position:relative;
+ }
+ select {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    width: 250px;
+ }
+ select:focus{ outline: none;}
+ 
+ .caja::after{
+     display:table-cell;
+     padding-top:7px;
+     text-align:center;
+     width:40px;
+     height:40px;
+     background-color:#d9d9d9;
+     position:absolute;
+     top:0;
+     right:0px;	
+     pointer-events: none;
+ }
+
+ /*Fin select*/
+ 
+@media (max-width: 400px) {
+    .logo img {
+        display:block;
+        margin:auto;
+        margin-top: 30px;
+        width: 70%;
+    }
+
+    .s1{
+        margin-top: 17px;
+    }
+
+    .queries {
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 900px){
+    .logo img {
+        display:block;
+        margin:auto;
+        margin-top: 30px;
+        width: 50%;
+    }
+
+    .s1{
+        margin-top: 17px;
+    }
+    
+    .queries {
+        margin-top: 30px;
+    }
+}
